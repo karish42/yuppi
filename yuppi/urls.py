@@ -12,7 +12,7 @@ from yuppi import settings
 urlpatterns = [
     path('', views.index),
     path('admin/', admin.site.urls),
-   # path('<int:id>/', views.detail_view, name='detail'),
+    path('<int:id>/', views.portfolio_view, name='detail'),
     #url(r'^media/(?P<path>.*)$', serve,{'document_root':       settings.MEDIA_ROOT}), 
    # url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}),
 ]+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)+static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
